@@ -136,6 +136,14 @@ public class CommonConfigurationKeys extends CommonConfigurationKeysPublic {
   public static final int IO_COMPRESSION_CODEC_SNAPPY_BUFFERSIZE_DEFAULT =
       256 * 1024;
 
+  /** Internal buffer size for Zstd compressor/decompressors */
+  public static final String IO_COMPRESSION_CODEC_ZSTD_BUFFERSIZE_KEY =
+          "io.compression.codec.zstd.buffersize";
+
+  /** Default value for IO_COMPRESSION_CODEC_ZSTD_BUFFERSIZE_KEY */
+  public static final int IO_COMPRESSION_CODEC_ZSTD_BUFFERSIZE_DEFAULT =
+          256 * 1024;
+
   /** Internal buffer size for Lz4 compressor/decompressors */
   public static final String IO_COMPRESSION_CODEC_LZ4_BUFFERSIZE_KEY =
       "io.compression.codec.lz4.buffersize";
